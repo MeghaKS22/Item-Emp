@@ -42,7 +42,7 @@ public class ItemServiceImpl implements ItemService {
         Item item1 = itemRepo.findById(itemId).orElseThrow(
                 () -> new ItemNotFoundException("No such item (" + itemId + ") found")
         );
-        item1.setName(Objects.isNull(item.getName()) ? item1.getName() : item.getName());
+        item1.setItemname(Objects.isNull(item.getItemname()) ? item1.getItemname() : item.getItemname());
         item1.setQuantity(Objects.isNull(item.getQuantity()) ? item1.getQuantity() : item.getQuantity());
         item1.setPrice(Objects.isNull(item.getPrice()) ? item1.getPrice() : item.getPrice());
 //        System.out.println("Hello-------------");
