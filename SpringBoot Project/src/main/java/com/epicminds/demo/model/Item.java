@@ -21,10 +21,10 @@ public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer id;
-    @Column(name = "name")
+    @Column(name = "itemname")
     @NotNull
     @Size(min = 4, message="should be more than 4.......", max = 15)
-    String name;
+    String itemname;
     @Column(name = "price")
     Double price;
     @Column(name = "quantity")
